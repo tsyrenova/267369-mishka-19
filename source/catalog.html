@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Мишка</title>
+</head>
+
+<body>
+  <!-- Шапка сайта -->
+  <header class="main-header">
+    <a class="main-header__logo">
+      <img class="main-header__logo-image" src="https://via.placeholder.com/150x150" alt="Мишка">
+    </a>
+    <nav class="main-nav">
+      <button class="main-header__toggle" type="button">
+        <span class="visual-hidden">Открыть меню</span>
+      </button>
+      <li class="main-nav__wrapper">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a class="site-list__item-link site-list__item-lin">Каталог товаров</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__item-link" href="form.html">Вязание на заказ</a>
+          </li>
+          <li class="site-list__item">
+            <span>Поиск по сайту</span>
+          </li>
+          <li class="site-list__item">
+            <span>Корзина: пока пуста</span>
+          </li>
+        </ul>
+        </div>
+    </nav>
+  </header>
+  <!-- Основное содержимое страницы -->
+  <main class="page-main">
+    <h1 class="page-main__title">Каталог товаров</h1>
+    <section class="catalog">
+      <h2 class="visual-hidden">Заказ товаров</h2>
+      <ul class="catalog__list">
+        <li class="catalog__item products">
+          <a class="products__link-image" href="#">
+            <img class="products__image" src="https://via.placeholder.com/150x150">
+          </a>
+          <h3 class="products__title">Зайчик-попрыгайчик</h3>
+          <p class="products__text">Рост 30 см, вес 200 г</p>
+          <span class="products__price">1 200 руб.</span>
+          <button class="products__button" type="button">Корзина</button>
+        </li>
+        <li class="catalog__item products">
+          <a class="products__link-image" href="#">
+            <img class="products__image" src="https://via.placeholder.com/150x150">
+          </a>
+          <h3 class="products__title">Корзинка для белья</h3>
+          <p class="products__text">Диаметр 15 см, высота 10 см</p>
+          <span class="products__price">690 руб.</span>
+          <button class="products__button" type="button">Корзина</button>
+        </li>
+        <li class="catalog__item products">
+          <a class="products__link-image" href="#">
+            <img class="products__image" src="https://via.placeholder.com/150x150">
+          </a>
+          <h3 class="products__title">Большая корзинка для игрушек</h3>
+          <p class="products__text">Диаметр 30 см, высота 30 см</p>
+          <span class="products__price">1 500 руб.</span>
+          <button class="products__button" type="button">Козина</button>
+        </li>
+      </ul>
+    </section>
+
+    <section class="production">
+      <h2 class="production__title">Процесс производства</h2>
+      <div class="production__video-wrapper">
+        <img class="production__video-image" src="https://via.placeholder.com/150x150">
+        <button class="production__video-button" type="button">Play</button>
+      </div>
+      <p class="production__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как
+        появляются наши товары.</p>
+      <button class="production__button button" type="button">Сделать заказ</button>
+    </section>
+  </main>
+
+  <!-- Подвал сайта -->
+  <footer class="page-footer">
+    <section class="contact">
+      <div class="page-footer__contacts contacts">
+        <h2 class="contact__title">Контакты</h2>
+        <ul class="contact__list">
+          <li class="contact__item">e-mail:</li>
+          <li class="contact__item">info@mimimishkashop.ru</li>
+          <li class="contact__item">адрес:</li>
+          <li class="contact__item">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</li>
+        </ul>
+      </div>
+      <!-- Карта будет вставлена через iframe -->
+      <button class="page-footer_button button" type="button">Нaпишите нам</button>
+      <div class="page-footer_social social">
+        <ul class="social_list">
+          <li class="social__item">
+            <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Instargam</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Facebook</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy_ru">Twitter</a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__copyright copyright">
+        <p class="copyright__text">Разработано:</p>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      </div>
+    </section>
+  </footer>
+
+  <section class="modal">
+    <h2 class="modal__title">Добавить в корзину</h2>
+    <p class="modal__text">Выберите размер:</p>
+    <div class="modal__size-wrapper">
+      <button class="modal__size-button" type="button">S</button>
+      <button class="modal__size-button" type="button">M</button>
+      <button class="modal__size-button" type="button">L</button>
+    </div>
+    <button class="modal__button" type="button">Добавить</button>
+
+  </section>
+
+</body>
+
+</html>
