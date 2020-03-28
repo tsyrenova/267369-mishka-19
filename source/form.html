@@ -16,7 +16,7 @@
       <button class="main-header__toggle">
         <span class="visual-hidden">Открыть меню</span>
       </button>
-      <li class="main-nav__wrapper">
+      <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
             <a class="site-list__item-link" href="catalog.html">Каталог товаров</a>
@@ -25,13 +25,13 @@
             <a class="site-list__item-link">Вязание на заказ</a>
           </li>
           <li class="site-list__item">
-            <span>Поиск по сайту</span>
+            <a class="site-list__item-link" href="#">Поиск по сайту</a>
           </li>
           <li class="site-list__item">
-            <span>Корзина: пока пуста</span>
+            <a class="site-list__item-link" href="#">Корзина: пока пуста</a>
           </li>
         </ul>
-        </div>
+      </div>
     </nav>
   </header>
   <!-- Основное содержимое страницы -->
@@ -39,7 +39,7 @@
     <h1 class="page-main__title">Вязание на заказ</h1>
     <p class="page-main__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и
       мы свяжемся с вами, чтобы уточнить детали.</p>
-    <form class="form" method="get action=" https://echo.htmlacademy.ru">
+    <form class="form" method="get" action="https://echo.htmlacademy.ru">
       <div class="form__wrapper-fieldset">
         <fieldset class="form__fieldset form__fieldset--radio">
           <legend class="form__legend">Тип</legend>
@@ -67,7 +67,7 @@
               <label class="form__label" for="grey">Серый</label>
             </li>
             <li class="form__item">
-              <input class="form__input" type="checkbox" name="grey" id="tiffany">
+              <input class="form__input" type="checkbox" name="tiffany" id="tiffany">
               <label class="form__label" for="tiffany">«Тиффани»</label>
             </li>
             <li class="form__item">
@@ -107,15 +107,13 @@
         </fieldset>
 
         <fieldset class="form__fieldset">
-          <legend class="form__legend">Тел</legend>
-          <label class="form__label" for="phone">Телефон:*</label>
+          <label class="form__legend" for="phone">Тел</label>
           <input class="form__input form__input--phone" type="tel" required id="phone" name="phone"
             placeholder="+7 ХХХ ХХХ ХХ ХХ*">
         </fieldset>
 
         <fieldset class="form__fieldset">
-          <legend class="form__legend">E-mail</legend>
-          <label class="form__label" for="post">E-mail:*</label>
+          <label class="form__legend" for="post">E-mail</label>
           <input class="form__input form__input--post" type="email" id="post" name="post" placeholder="Ваш Email*">
         </fieldset>
 
@@ -135,38 +133,24 @@
 
   <!-- Подвал сайта -->
   <footer class="page-footer">
-    <section class="contact">
-      <div class="page-footer__contacts contacts">
-        <h2 class="contact__title">Контакты</h2>
-        <ul class="contact__list">
-          <li class="contact__item">e-mail:</li>
-          <li class="contact__item">info@mimimishkashop.ru</li>
-          <li class="contact__item">адрес:</li>
-          <li class="contact__item">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</li>
-        </ul>
-      </div>
-      <!-- Карта будет вставлена через iframe -->
-      <button class="page-footer_button button">Нaпишите нам</button>
-      <div class="page-footer_social social">
-        <ul class="social_list">
-          <li class="social__item">
-            <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Instargam</a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Facebook</a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy_ru">Twitter</a>
-          </li>
-        </ul>
-      </div>
-      <div class="page-footer__copyright copyright">
-        <p class="copyright__text">Разработано:</p>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-      </div>
-    </section>
+    <div class="page-footer_social social">
+      <ul class="social_list">
+        <li class="social__item">
+          <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Instargam</a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Facebook</a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy_ru">Twitter</a>
+        </li>
+      </ul>
+    </div>
+    <div class="page-footer__copyright copyright">
+      <p class="copyright__text">Разработано:</p>
+      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+    </div>
   </footer>
-
 </body>
 
 </html>
