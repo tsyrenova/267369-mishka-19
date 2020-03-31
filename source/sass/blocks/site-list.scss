@@ -1,0 +1,7 @@
+.site-list {
+  @include list-reset;
+}
+
+.site-list__item-link {
+  @include font-title(17px, 24px);
+}

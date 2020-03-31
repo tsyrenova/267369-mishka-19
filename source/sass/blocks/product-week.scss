@@ -1,0 +1,29 @@
+.product-week__name {
+  @include font-title(25px, 30px);
+}
+
+.product-week__title {
+  @include font-title(17px, 20px, $color: $downy);
+  text-transform: uppercase;
+}
+
+.product-week__description {
+  @include font-main(15px, 24px);
+}
+
+.product-week__propeties-col {
+  @include font-main(15px, 24px);
+}
+
+.product-week__image {
+  background-color: $alabaster;
+}
+
+.product-week__price {
+  @include font-title(17px, 24px, $text-align: center, $color: $tundora);
+}
+
+.product-week__link {
+  @include font-title(17px, 20px, $text-align: center, $color: $tundora);
+  text-transform: uppercase;
+}

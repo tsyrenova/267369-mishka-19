@@ -1,0 +1,20 @@
+.reviews__title {
+  @include font-title(25px, 30px);
+}
+
+.reviews__text {
+  @include font-main(15px, 30px);
+}
+
+.reviews__avtor-name {
+  @include font-title(17px, 24px);
+}
+
+.reviews__email {
+  @include font-main(17px, 30px);
+}
+
+.reviews__write {
+  @include font-title(18px, 20px, $text-align: center, $color: $tundora);
+  text-transform: uppercase;
+}

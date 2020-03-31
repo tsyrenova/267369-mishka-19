@@ -1,0 +1,18 @@
+.page-main__title {
+  @include font-title(27px, 30px);
+  min-height: 373px;
+  text-align: center;
+  color: $diesel;
+}
+
+.page-main__wrapper--image {
+  background-color: $alabaster;
+}
+
+.page-main__wrapper {
+  background-color: $seashell;
+}
+
+.page-main__description {
+  @include font-main(13px, 24px);
+}

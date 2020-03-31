@@ -1,0 +1,27 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "OpenSans", sans-serif;
+  font-style: normal;
+  font-size: 17px;
+  line-height: 18px;
+  text-align: left;
+  color: $tundora;
+  font-weight: 400;
+  background-color: $white;
+
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}

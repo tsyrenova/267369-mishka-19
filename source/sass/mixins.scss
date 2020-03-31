@@ -1,0 +1,32 @@
+@mixin font-main($font-size, $line-height, $color: $tundora) {
+  font-style: normal;
+  font-size: $font-size;
+  line-height: $line-height;
+  font-family: $font;
+  text-align: left;
+  color: $color;
+  font-weight: 400;
+}
+
+@mixin font-title($font-size, $line-height, $text-align: left, $color: $black) {
+  font-style: normal;
+  font-size: $font-size;
+  line-height: $line-height;
+  font-family: $font;
+  text-align: $text-align;
+  color: $color;
+  font-weight: 700;
+}
+
+@mixin list-reset {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@mixin button-reset {
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+}

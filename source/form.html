@@ -3,13 +3,14 @@
 
 <head>
   <meta charset="utf-8">
+  <link href="css/style.css" rel="stylesheet">
   <title>HTML Academy: Мишка</title>
 </head>
 
 <body>
   <!-- Шапка сайта -->
   <header class="main-header">
-    <a class="main-header__logo">
+    <a class="main-header__logo" href="index.html">
       <img class="main-header__logo-image" src="https://via.placeholder.com/150x150" alt="Мишка">
     </a>
     <nav class="main-nav">
@@ -36,7 +37,11 @@
   </header>
   <!-- Основное содержимое страницы -->
   <main class="page-main">
-    <h1 class="page-main__title">Вязание на заказ</h1>
+    <div class="page-main__wrapper page-main__wrapper--image">
+      <div class="container">
+        <h1 class="page-main__title">Вязание на заказ</h1>
+      </div>
+    </div>
     <p class="page-main__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и
       мы свяжемся с вами, чтобы уточнить детали.</p>
     <form class="form" method="get" action="https://echo.htmlacademy.ru">

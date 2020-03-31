@@ -1,0 +1,16 @@
+.production__title {
+  @include font-title(17px, 24px);
+}
+
+.production__video-image {
+  background-color: $seashell;
+}
+
+.production__text {
+  @include font-main(13px, 24px);
+}
+
+.production__link {
+  @include font-title(17px, 16px, $text-align: center, $color: $tundora);
+  text-transform: uppercase;
+}
