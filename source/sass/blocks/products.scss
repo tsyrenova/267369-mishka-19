@@ -1,0 +1,15 @@
+.products__image {
+  background-image: $seashell;
+}
+
+.products__title {
+  @include font-title(17px, 24px);
+}
+
+.products__text {
+  @include font-main(13px, 30px);
+}
+
+.products__price {
+  @include font-title(15px, 24px);
+}

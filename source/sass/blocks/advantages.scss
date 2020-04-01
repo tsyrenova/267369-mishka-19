@@ -1,0 +1,11 @@
+.advantages__title {
+  @include font-title(25px, 30px);
+}
+
+.advantages__list {
+  @include list-reset;
+}
+
+.advantages__item {
+  @include font-title(17px, 20px);
+}

@@ -1,0 +1,19 @@
+.range__list {
+  @include list-reset;
+}
+
+.range__item {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 29px;
+  background-color: $downy;
+}
+
+.range__item:last-child {
+  background-color: $fountain-blue;
+}
+
+.range__item-link {
+  @include font-title(19px, 24px);
+  color: $white;
+}

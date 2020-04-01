@@ -1,0 +1,25 @@
+.contact__title {
+  @include font-title(18px, 30px);
+}
+
+.contact__list {
+  @include list-reset;
+}
+
+.contact__item {
+  @include font-main(15px, 30px);
+}
+
+.contact__item-link {
+  @include font-main(15px, 30px);
+  text-decoration: none;
+}
+
+.contact__map {
+  background-color: $alabaster;
+}
+
+.contact__link {
+  @include font-title(18px, 20px, $text-align: center, $color: $tundora);
+  text-transform: uppercase;
+}
