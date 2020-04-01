@@ -12,6 +12,11 @@
 }
 
 .form__input {
+  @include font-main(19px, 18px);
+}
+
+.form__input::placeholder,
+.form__textarea::placeholder {
   @include font-main(17px, 18px);
   color: $tundora-30;
 }
@@ -21,13 +26,8 @@
   text-transform: uppercase;
 }
 
-.form__textarea {
-  @include font-main(17px, 18px);
-  color: $tundora-30;
-}
-
 .form__text {
-  @include font-title(14px, 16px);
+  @include font-main(14px, 16px);
 }
 
 .form__button {
