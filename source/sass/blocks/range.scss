@@ -1,3 +1,8 @@
+.range__wrapper .container {
+  width: 100%;
+  padding: 0;
+}
+
 .range__list {
   @include list-reset;
 }
@@ -5,7 +10,8 @@
 .range__item {
   padding-top: 30px;
   padding-bottom: 30px;
-  padding-left: 29px;
+  padding-left: 30px;
+  padding-right: 118px;
   background-color: $downy;
 }
 
@@ -16,4 +22,14 @@
 .range__item-link {
   @include font-title(19px, 24px);
   color: $white;
+}
+
+@media (min-width: $tablet-width) {
+  .range__wrapper {
+    background-color: $alabaster-two;
+  }
+  .range__wrapper .container {
+    width: $tablet-width;
+    padding: 0 50px;
+  }
 }

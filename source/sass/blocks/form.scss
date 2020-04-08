@@ -35,3 +35,20 @@
   text-transform: uppercase;
   cursor: pointer;
 }
+
+@media (min-width: $tablet-width) {
+  .form__wrapper-fieldset {
+    background-color: $seashell;
+  }
+
+  .form__input--phone,
+  .form__input--post {
+    background-color: $seashell;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form__wrapper-fieldset {
+    background-color: orange;
+  }
+}

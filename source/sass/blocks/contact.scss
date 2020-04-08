@@ -17,9 +17,44 @@
 
 .contact__map {
   background-color: $alabaster;
+  background: $alabaster;
 }
 
 .contact__link {
   @include font-title(18px, 20px, $text-align: center, $color: $tundora);
   text-transform: uppercase;
+}
+
+@media (min-width: $desktop-width) {
+  .contact__wrapper {
+    display: flex;
+    position: relative;
+    width: $desktop-width;
+    margin: 0 auto;
+    outline: 1px solid red;
+  }
+
+  .contact__wrapper .container {
+    width: 100%;
+    margin-right: auto;
+  }
+
+  .contact__wrapper-map {
+    margin-left: auto;
+  }
+
+  .contact__map {
+    width: auto;
+    min-height: 460px;
+  }
+
+  .contact__wrapper-button {
+    position: absolute;
+    bottom: 100px;
+    left: 0;
+  }
+
+  .contact__wrapper-button.container {
+    width: auto;
+  }
 }
