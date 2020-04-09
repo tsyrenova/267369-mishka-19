@@ -72,14 +72,18 @@
     </div>
     <section class="range">
       <div class="range__wrapper">
-        <div class="container">
+        <div class="range__container">
           <h2 class="visual-hidden">Ассортимент</h2>
           <ul class="range__list">
             <li class="range__item range__item--interior">
-              <a class="range__item-link" href="#">Предметы интерьера</a>
+              <div class="range__item-container">
+                <a class="range__item-link" href="#">Предметы интерьера</a>
+              </div>
             </li>
             <li class="range__item range__item--toy">
-              <a class="range__item-link" href="#">Детские игрушки</a>
+              <div class="range__item-container">
+                <a class="range__item-link" href="#">Детские игрушки</a>
+              </div>
             </li>
           </ul>
         </div>
@@ -152,7 +156,7 @@
 
     <section class="contact">
       <div class="contact__wrapper">
-        <div class="container">
+        <div class="contact__container">
           <h2 class="contact__title">Контакты</h2>
           <ul class="contact__list">
             <li class="contact__item">e-mail:</li>
@@ -166,7 +170,7 @@
         <div class="contact__wrapper-map">
           <img class="contact__map" src="https://via.placeholder.com/322x457" width="100%" height="457" alt="Карта">
         </div>
-        <div class="contact__wrapper-button container">
+        <div class="contact__wrapper-button contact__container">
           <a class="contact__link button" href="#">Нaпишите нам</a>
         </div>
       </div>
@@ -176,22 +180,24 @@
   <!-- Подвал сайта -->
   <footer class="page-footer">
     <div class=" page-footer__wrapper">
-      <div class="page-footer__social social container">
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Instargam</a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Facebook</a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy_ru">Twitter</a>
-          </li>
-        </ul>
-      </div>
-      <div class="page-footer__copyright copyright container">
-        <p class="copyright__text">Разработано:</p>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      <div class="container">
+        <div class="page-footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Instargam</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Facebook</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy_ru">Twitter</a>
+            </li>
+          </ul>
+        </div>
+        <div class="page-footer__copyright copyright">
+          <p class="copyright__text">Разработано:</p>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        </div>
       </div>
     </div>
   </footer>

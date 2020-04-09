@@ -1,3 +1,9 @@
+.contact__container {
+  width: 320px;
+  padding: 0 30px;
+  margin: 0 auto;
+}
+
 .contact__title {
   @include font-title(18px, 30px);
 }
@@ -24,6 +30,13 @@
   text-transform: uppercase;
 }
 
+@media (min-width: $tablet-width) {
+  .contact__container {
+    width: $tablet-width;
+    padding: 0 50px;
+  }
+}
+
 @media (min-width: $desktop-width) {
   .contact__wrapper {
     display: flex;
@@ -33,7 +46,7 @@
     outline: 1px solid red;
   }
 
-  .contact__wrapper .container {
+  .contact__container {
     width: 100%;
     margin-right: auto;
   }
@@ -53,7 +66,7 @@
     left: 0;
   }
 
-  .contact__wrapper-button.container {
+  .contact__wrapper-button.contact__container {
     width: auto;
   }
 }

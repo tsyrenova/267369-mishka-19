@@ -53,16 +53,10 @@
     padding: 0;
   }
 
-  .site-list__item {
+  .site-list__item::after {
     display: none;
-
-    &::after {
-      display: none;
-    }
   }
-  // .site-list__item:not(:last-child) {
-  //   display: none;
-  // }
+
   .site-list__item--search,
   .site-list__item--backet {
     display: flex;
