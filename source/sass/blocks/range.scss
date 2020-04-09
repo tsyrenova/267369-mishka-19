@@ -1,3 +1,8 @@
+// .range__container {
+//   width: 100%;
+//   padding: 0;
+// }
+
 .range__list {
   @include list-reset;
 }
@@ -5,7 +10,6 @@
 .range__item {
   padding-top: 30px;
   padding-bottom: 30px;
-  padding-left: 29px;
   background-color: $downy;
 }
 
@@ -16,4 +20,35 @@
 .range__item-link {
   @include font-title(19px, 24px);
   color: $white;
+}
+
+.range__item-container {
+  width: 320px;
+  padding: 0 30px;
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .range__wrapper {
+    background-color: $alabaster-two;
+  }
+
+  .range__container {
+    width: 768px;
+    padding: 0 50px;
+    margin: 0 auto;
+  }
+
+  .range__item-container {
+    width: 100%;
+    padding: 0 50px;
+    outline: 1px solid red;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .range__container {
+    width: $desktop-width;
+    padding: 0 50px;
+  }
 }
