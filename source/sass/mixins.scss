@@ -36,3 +36,8 @@
   display: $display;
   position: $pos;
 }
+
+@mixin reset {
+  margin: 0;
+  padding: 0;
+}

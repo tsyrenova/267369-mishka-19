@@ -1,3 +1,16 @@
 .button {
   @include button-reset;
+  @include font-title(17px, 20px, $text-align: center, $color: $tundora);
+  text-transform: uppercase;
+  border: 2px solid $tundora;
+
+  &:hover,
+  &:focus {
+    color: $white;
+    background-color: $tundora;
+  }
+
+  &:active {
+    color: $white-30;
+  }
 }
