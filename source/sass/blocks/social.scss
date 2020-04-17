@@ -1,3 +1,47 @@
+.social {
+  margin-bottom: 9px;
+}
+
 .social__list {
   @include list-reset;
+  display: flex;
+  padding-top: 25px;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding-left: 57px;
+  padding-right: 60px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid $mercury;
+}
+
+.social__item {
+  &--instagram,
+  &--twitter {
+    padding-top: 5px;
+  }
+}
+
+.social__icon {
+  &:hover,
+  &:focus {
+    & path {
+      fill: $puerto-rico;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .social {
+    width: 143px;
+    margin-bottom: 0;
+  }
+
+  .social__list {
+    @include reset;
+    padding-top: 8px;
+  }
 }

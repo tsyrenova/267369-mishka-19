@@ -1,6 +1,6 @@
 .product-week {
   position: relative;
-  padding-bottom: 50px;
+  padding-bottom: 48px;
 
   &::after {
     @include pseudo;
@@ -72,7 +72,7 @@
 
 @media (min-width: $tablet-width) {
   .product-week {
-    min-height: 700px;
+    min-height: 641px;
 
     &::before {
       @include pseudo;
@@ -87,7 +87,7 @@
     &::after {
       background-size: auto 17px;
       height: 21px;
-      bottom: 69px;
+      bottom: 9px;
     }
   }
 
@@ -160,7 +160,9 @@
 
 @media (min-width: $desktop-width) {
   .product-week {
-    min-height: 860px;
+    min-height: 810px;
+    padding-bottom: 0;
+    margin-bottom: 54px;
 
     &::before {
       background-repeat: repeat-x;
@@ -172,15 +174,6 @@
     &::after {
       display: none;
     }
-
-    // &:after {
-    //   background-repeat: no-repeat;
-    //   background-size: auto 21px;
-    //   width: 100%;
-    //   left: 92px;
-    //   height: 20px;
-    //   bottom: 54px;
-    // }
   }
 
   .product-week__wrapper {

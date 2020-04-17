@@ -1,3 +1,17 @@
+.contact__wrapper {
+  position: relative;
+
+  &::before {
+    @include pseudo;
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-repeat: repeat-x;
+    background-size: auto 7px;
+    width: 100%;
+    height: 8px;
+    top: 13px;
+  }
+}
+
 .contact__container {
   width: 320px;
   padding: 0 30px;
@@ -6,64 +20,234 @@
 
 .contact__title {
   @include font-title(18px, 30px);
+  margin-bottom: 25px;
+  padding-top: 55px;
 }
 
 .contact__list {
   @include list-reset;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 37px;
 }
 
 .contact__item {
   @include font-main(15px, 30px);
+
+  &--email {
+    margin-bottom: 30px;
+  }
+
+  &--email,
+  &--adress {
+    width: 146px;
+    margin-left: 29px;
+  }
 }
 
 .contact__item-link {
   @include font-main(15px, 30px);
   text-decoration: none;
+  padding-bottom: 4px;
+  border-bottom: 1px solid $downy-two;
+
+  &:hover,
+  &:focus {
+    color: $puerto-rico;
+    border-bottom: 1px solid $puerto-rico;
+  }
+
+  &:active {
+    opacity: 0.3;
+    border-bottom: 1px solid $aqua-spring;
+  }
+}
+
+.contact__wrapper-map {
+  position: relative;
+  margin-bottom: 36px;
 }
 
 .contact__map {
   background-color: $alabaster;
 }
 
+.contact__map-google {
+  position: absolute;
+  width: 100%;
+}
+
+.contact__wrapper-button {
+  margin-bottom: 39px;
+}
+
 .contact__link {
-  @include font-title(18px, 20px, $text-align: center, $color: $tundora);
-  text-transform: uppercase;
+  display: block;
+  width: 259px;
+  padding-top: 15px;
+  padding-bottom: 13px;
 }
 
 @media (min-width: $tablet-width) {
+  .contact {
+    margin-bottom: 57px;
+  }
+
+  .contact__wrapper {
+    &::before {
+      background-size: auto 17px;
+      height: 22px;
+      top: 48px;
+    }
+  }
+
   .contact__container {
     width: $tablet-width;
     padding: 0 50px;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .contact__wrapper {
-    display: flex;
+  .contact__title {
+    @include font-title(43px, 50px);
     position: relative;
-    width: $desktop-width;
-    margin: 0 auto;
-    outline: 1px solid red;
+    padding-top: 125px;
+    margin-left: -4px;
+    margin-bottom: 49px;
+
+    &::after {
+      @include pseudo;
+      background-image: url("../img/icon-flag.svg");
+      width: 46px;
+      height: 81px;
+      bottom: -16px;
+      right: 4px;
+    }
   }
 
-  .contact__container {
-    width: 100%;
-    margin-right: auto;
+  .contact__list {
+    margin-bottom: 56px;
+  }
+
+  .contact__item {
+    font-size: 17px;
+
+    &--email,
+    &--adress {
+      width: 230px;
+    }
+
+    &--email {
+      margin-right: 26px;
+      margin-left: 23px;
+    }
+
+    &--adress {
+      margin-left: 26px;
+    }
+
+    .contact__item-link {
+      font-size: 17px;
+    }
   }
 
   .contact__wrapper-map {
-    margin-left: auto;
+    margin-bottom: 52px;
+  }
+
+  .contact__wrapper-button {
+    margin-bottom: 57px;
+  }
+
+  .contact__link {
+    width: 230px;
+    margin: auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contact {
+    margin-bottom: 102px;
+  }
+
+  .contact__wrapper {
+    display: flex;
+    width: $desktop-width;
+    margin: 0 auto;
+
+    &::before {
+      background-image: none;
+    }
+  }
+
+  .contact__wrapper-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1150px;
+    margin-right: auto;
+    padding: 0 50px;
+    position: relative;
+
+    &::before {
+      @include pseudo;
+      background-image: url("../img/bg-zigzag-line.svg");
+      background-repeat: no-repeat;
+      background-size: auto 21px;
+      width: 100%;
+      height: 47px;
+      top: 37px;
+    }
+  }
+
+  .contact__container {
+    @include reset;
+    width: 500px;
+    margin-right: 25px;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  .contact__title {
+    @include font-title(53px, 57px);
+    padding-top: 155px;
+    margin-left: 170px;
+
+    &::after {
+      bottom: -16px;
+      right: 0;
+      left: -107px;
+    }
+  }
+
+  .contact__list {
+    width: 372px;
+    margin-left: 174px;
+  }
+
+  .contact__wrapper-map {
+    padding-top: 129px;
+    margin-bottom: 0;
+  }
+
+  .contact__map-google {
+    top: 129px;
+    right: 0;
+    width: 525px;
   }
 
   .contact__map {
-    width: auto;
-    min-height: 460px;
+    width: 525px;
+    min-height: 457px;
   }
 
   .contact__wrapper-button {
     position: absolute;
-    bottom: 100px;
-    left: 0;
+    bottom: 3px;
+    left: 225px;
+
+    &::before {
+      display: none;
+    }
   }
 
   .contact__wrapper-button.contact__container {

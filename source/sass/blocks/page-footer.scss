@@ -1,1 +1,54 @@
-// Здесь будет код
+.page-footer {
+  background-color: $seashell;
+  min-height: 160px;
+}
+
+.page-footer__container {
+  width: 320px;
+  padding: 0 30px;
+  margin: 0 auto;
+}
+
+.page-footer__logo {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer {
+    min-height: 143px;
+  }
+
+  .page-footer__wrapper {
+    padding-top: 40px;
+  }
+
+  .page-footer__container {
+    width: $tablet-width;
+    padding: 0 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 0;
+  }
+
+  .page-footer__logo {
+    display: block;
+    width: 227px;
+
+    &:hover,
+    &:focus {
+      fill: $puerto-rico;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer__container {
+    width: $desktop-width;
+    padding: 0 50px;
+  }
+}

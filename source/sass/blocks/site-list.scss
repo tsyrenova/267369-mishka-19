@@ -9,42 +9,22 @@
   padding-bottom: 28px;
 }
 
-.site-list__icon--search,
-.site-list__icon--backet {
-  opacity: 0.2;
-}
-
-.site-list__item-link[href]:hover,
-.site-list__item-link[href]:focus {
+.site-list__item-link:hover,
+.site-list__item-link:focus {
   color: $black-hover;
-
-  & + .site-list__icon--search,
-  & + .site-list__icon--backet {
-    opacity: 1;
-
-    & path {
-      fill: $downy;
-    }
-  }
 }
 
-.site-list__item-link[href]:active {
+.site-list__item-link:active {
   color: $black-active;
-
-  & + .site-list__icon--search,
-  & + .site-list__icon--backet {
-    opacity: 0.3;
-  }
 }
 
 .site-list__item {
   position: relative;
   min-height: 79px;
-  padding-left: 11px;
 
   &::after {
     @include pseudo;
-    left: -63px;
+    left: -74px;
     bottom: 0;
     width: 320px;
     height: 1px;
@@ -54,19 +34,11 @@
 
 .site-list__item:first-child .site-list__item-link::before {
   @include pseudo;
-  left: -63px;
+  left: -74px;
   top: 0;
   width: 320px;
   height: 1px;
   background-color: $gallery;
-}
-
-.site-list__item--new {
-  display: none;
-}
-
-.site-list__item--sale {
-  display: none;
 }
 
 .site-list__icon {
@@ -82,28 +54,13 @@
     padding: 0;
   }
 
-  .site-list__item::before {
-    display: none;
-  }
-
-  .site-list__item::after {
-    display: none;
-  }
-
   .site-list__item {
-    &--catalog,
-    &--form {
-      position: absolute;
-      bottom: -97px;
-      z-index: 1;
-    }
+    min-height: auto;
+    width: 166px;
 
-    &--catalog {
-      left: 38px;
-    }
-
-    &--form {
-      left: 206px;
+    &::before,
+    &::after {
+      display: none;
     }
   }
 
@@ -179,9 +136,9 @@
 @media (min-width: $desktop-width) {
   .site-list__item {
     display: block;
+    width: 185px;
     padding: 0;
-    padding-top: 31px;
-    padding-bottom: 31px;
+    padding-top: 11px;
 
     &--catalog,
     &--form {
@@ -189,13 +146,9 @@
     }
 
     &--catalog {
-      margin-right: 34px;
-      padding-right: 35px;
+      margin-right: 33px;
+      padding-right: 0;
       border-right: 1px solid #ececec;
-    }
-
-    &--form {
-      margin-right: 230px;
     }
 
     &--search {
@@ -224,6 +177,9 @@
   }
 
   .site-list__item-link {
+    padding-top: 20px;
+    padding-bottom: 30px;
+
     &--new,
     &--sale {
       @include font-title(15px, 24px);
