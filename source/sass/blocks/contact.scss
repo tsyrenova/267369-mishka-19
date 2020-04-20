@@ -70,6 +70,7 @@
 
 .contact__map {
   background-color: $alabaster;
+  min-height: 457px;
 }
 
 .contact__map-google {
@@ -222,6 +223,10 @@
   .contact__list {
     width: 372px;
     margin-left: 174px;
+  }
+
+  .contact__item--mail {
+    margin-right: 0;
   }
 
   .contact__wrapper-map {

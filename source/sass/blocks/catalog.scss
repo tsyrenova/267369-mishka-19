@@ -1,3 +1,33 @@
+.catalog {
+  margin-bottom: 32px;
+}
+
 .catalog__list {
   @include list-reset;
+}
+
+.catalog__item {
+  margin-bottom: 32px;
+  outline: 1px solid $gallery;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog__item {
+    display: flex;
+    margin-bottom: 54px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog__list {
+    display: flex;
+  }
+
+  .catalog__item {
+    min-height: 657px;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 51px;
+    margin-bottom: 26px;
+  }
 }

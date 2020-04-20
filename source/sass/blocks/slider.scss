@@ -70,13 +70,17 @@
 }
 
 @media (min-width: $desktop-width) {
+  .slider__toggles {
+    margin-bottom: 0;
+  }
+
   .slider__toggle {
     &--forward::before {
-      top: -48px;
+      top: 10px;
     }
 
     &--back::after {
-      top: -48px;
+      top: 10px;
     }
   }
 }
