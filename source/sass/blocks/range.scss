@@ -1,36 +1,70 @@
-// .range__container {
-//   width: 100%;
-//   padding: 0;
-// }
-
 .range__list {
   @include list-reset;
 }
 
 .range__item {
-  padding-top: 30px;
-  padding-bottom: 30px;
   background-color: $downy;
+
+  &:hover,
+  &:focus {
+    background-color: $viking;
+  }
 }
 
 .range__item:last-child {
   background-color: $fountain-blue;
-}
 
-.range__item-link {
-  @include font-title(19px, 24px);
-  color: $white;
+  &:hover,
+  &:focus {
+    background-color: $puerto-rico;
+  }
 }
 
 .range__item-container {
+  position: relative;
   width: 320px;
   padding: 0 30px;
   margin: 0 auto;
 }
 
+.range__item-link {
+  @include font-title(19px, 24px);
+  color: $white;
+  display: block;
+  padding-right: 83px;
+  padding-top: 26px;
+  padding-bottom: 29px;
+
+  &:hover,
+  &:focus {
+    padding-top: 21px;
+    padding-bottom: 39px;
+  }
+
+  &:active {
+    color: $white-30;
+  }
+}
+
+.range__item__icon {
+  position: absolute;
+
+  &--interior {
+    top: 23px;
+    right: 36px;
+    fill: $keppel;
+  }
+
+  &--toy {
+    top: 21px;
+    right: 27px;
+    fill: $keppel-two;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .range__wrapper {
-    background-color: $alabaster-two;
+    background-color: $alabaster-three;
   }
 
   .range__container {
@@ -39,10 +73,35 @@
     margin: 0 auto;
   }
 
+  .range__list {
+    display: flex;
+  }
+
   .range__item-container {
     width: 100%;
-    padding: 0 50px;
-    outline: 1px solid red;
+    // padding: 0 50px;
+  }
+
+  .range__item {
+    width: 334px;
+  }
+
+  .range__item-link {
+    @include font-title(20px, 30px);
+    color: $white;
+    padding-top: 27px;
+    padding-left: 6px;
+  }
+
+  .range__item__icon {
+    &--interior {
+      top: 30px;
+    }
+
+    &--toy {
+      top: 32px;
+      right: 34px;
+    }
   }
 }
 
@@ -50,5 +109,13 @@
   .range__container {
     width: $desktop-width;
     padding: 0 50px;
+  }
+
+  .range__item {
+    width: 525px;
+
+    &-link {
+      padding-right: 276px;
+    }
   }
 }
