@@ -54,6 +54,8 @@
 }
 
 .product-week__image {
+  width: 260px;
+  height: auto;
   background-color: $alabaster;
   margin-bottom: 5px;
 }
@@ -139,9 +141,9 @@
   .product-week__image {
     position: absolute;
     width: 333px;
-    min-height: 404px;
+    height: auto;
     top: 154px;
-    right: 51px;
+    right: 81px;
     background-color: $seashell;
     margin-bottom: 0;
   }
@@ -213,6 +215,7 @@
 
   .product-week__image {
     width: 525px;
+    height: auto;
     top: 74px;
     right: 50px;
   }

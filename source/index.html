@@ -400,23 +400,28 @@
   </footer>
   <!-- Модальное окно -->
   <section class="modal visual-hidden">
-    <h2 class="modal__title">Добавить в корзину</h2>
-    <p class="modal__text">Выберите размер:</p>
-    <div class="modal__size-wrapper">
-      <form class="modal__form">
-        <fieldset class="modal__form-fieldset">
-          <input class="modal__form-input" type="radio" name="small" id="small" checked>
-          <label class="modal__form-label" for="small">S</label>
-          <input class="modal__form-input" type="radio" name="medium" id="medium">
-          <label class="modal__form-label" for="medium">M</label>
-          <input class="modal__form-input" type="radio" name="large" id="large">
-          <label class="modal__form-label" for="large">L</label>
-        </fieldset>
-        <button class="modal__button" type="submit">Добавить</button>
-      </form>
+    <div class="modal__wrapper">
+      <h2 class="modal__title">Добавить в корзину</h2>
+      <p class="modal__text">Выберите размер:</p>
+      <div class="modal__size-wrapper">
+        <form class="modal__form">
+          <fieldset class="modal__form-fieldset">
+            <div class="modal__form-wrapper">
+              <input class="modal__form-input" type="radio" name="size" value="small" id="small" checked>
+              <label class="modal__form-label" for="small">S</label>
+              <input class="modal__form-input" type="radio" name="size" value="medium" id="medium">
+              <label class="modal__form-label" for="medium">M</label>
+              <input class="modal__form-input" type="radio" name="size" value="large" id="large">
+              <label class="modal__form-label" for="large">L</label>
+            </div>
+          </fieldset>
+          <button class="modal__button" type="submit">Добавить</button>
+        </form>
+      </div>
     </div>
   </section>
   <script src="js/menu.js"></script>
+  <script src="js/popup.js"></script>
 </body>
 
 </html>

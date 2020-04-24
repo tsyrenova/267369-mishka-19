@@ -4,22 +4,28 @@
 
 .page-main__wrapper {
   margin-bottom: 0;
-}
 
-.page-main__wrapper--image {
-  min-height: 283px;
-  background-image: url("../img/hero-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  background-size: 575px 373px;
-  background-position-x: 50%;
-  background-position-y: 19%;
-  background-color: $alabaster-two;
-}
+  &--image {
+    min-height: 283px;
+    background-image: url("../img/hero-mobile@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: 575px 373px;
+    background-position-x: 50%;
+    background-position-y: 19%;
+    background-color: $alabaster-two;
+  }
 
-.page-main__wrapper--catalog {
-  min-height: 175px;
-  background-color: $seashell;
-  margin-bottom: 31px;
+  &--catalog {
+    min-height: 175px;
+    background-color: $seashell;
+    margin-bottom: 31px;
+  }
+
+  &--form {
+    min-height: 175px;
+    background-color: $seashell;
+    margin-bottom: 23px;
+  }
 }
 
 .page-main__title {
@@ -31,6 +37,7 @@
 
 .page-main__description {
   @include font-main(13px, 24px);
+  margin-bottom: 11px;
 }
 
 @media (min-width: $tablet-width) {
@@ -41,32 +48,37 @@
   .page-main__wrapper {
     background-color: $seashell;
     border-top: none;
-  }
 
-  .page-main__wrapper--image {
-    min-height: 586px;
-    background-image: url("../img/hero-tablet@1x.jpg");
-    background-repeat: no-repeat;
-    background-size: 1150px 746px;
-    background-position-x: 50%;
-    background-position-y: 26%;
-    background-color: $alabaster-two;
-  }
+    &--image {
+      min-height: 586px;
+      background-image: url("../img/hero-tablet@1x.jpg");
+      background-repeat: no-repeat;
+      background-size: 1150px 746px;
+      background-position-x: 50%;
+      background-position-y: 26%;
+      background-color: $alabaster-two;
+    }
 
-  .page-main__wrapper--catalog {
-    position: relative;
-    min-height: 183px;
-    background-color: $seashell;
-    margin-bottom: 81px;
+    &--catalog,
+    &--form {
+      position: relative;
+      min-height: 183px;
+      background-color: $seashell;
+      margin-bottom: 81px;
 
-    &::before {
-      @include pseudo;
-      background-image: url("../img/bg-zigzag-fill.svg");
-      background-repeat: repeat-x;
-      background-size: auto 23px;
-      width: 100%;
-      height: 23px;
-      bottom: -15px;
+      &::before {
+        @include pseudo;
+        background-image: url("../img/bg-zigzag-fill.svg");
+        background-repeat: repeat-x;
+        background-size: auto 23px;
+        width: 100%;
+        height: 23px;
+        bottom: -15px;
+      }
+    }
+
+    &--form {
+      margin-bottom: 75px;
     }
   }
 
@@ -80,21 +92,31 @@
   .page-main__title--catalog {
     padding-top: 55px;
   }
+
+  .page-main__description {
+    @include font-main(17px, 30px);
+    margin-bottom: 47px;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .page-main__wrapper {
     background-color: $alabaster-three;
-  }
 
-  .page-main__wrapper--catalog {
-    min-height: 215px;
-    background-color: $seashell;
-    margin-bottom: 127px;
+    &--catalog,
+    &--form {
+      min-height: 215px;
+      background-color: $seashell;
+      margin-bottom: 127px;
 
-    &::before {
-      background-size: auto 34px;
-      height: 34px;
+      &::before {
+        background-size: auto 34px;
+        height: 34px;
+      }
+    }
+
+    &--form {
+      margin-bottom: 119px;
     }
   }
 
@@ -105,5 +127,10 @@
 
   .page-main__title--catalog {
     padding-top: 51px;
+  }
+
+  .page-main__description {
+    padding-left: 176px;
+    padding-right: 157px;
   }
 }

@@ -52,6 +52,10 @@
   @include font-title(15px, 24px);
 }
 
+.products__button {
+  cursor: pointer;
+}
+
 .products__icon {
   opacity: 0.2;
 

@@ -51,11 +51,11 @@
   }
 
   .reviews__wrapper {
-    background-color: none;
+    // background-color: none;
     position: relative;
-    background-image: linear-gradient(to right, $seashell 45.6%, white 45.6%);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
+    // background-image: linear-gradient(to right, $seashell 45.6%, white 45.6%);
+    // background-repeat: no-repeat;
+    // background-size: 100% 100%;
     margin-bottom: 0;
 
     &::before {
@@ -97,6 +97,7 @@
     bottom: 0;
     right: 0;
     order: 3;
+    z-index: 1;
   }
 
   .reviews__button {

@@ -66,16 +66,28 @@
 .contact__wrapper-map {
   position: relative;
   margin-bottom: 36px;
+
+  &::after {
+    @include pseudo;
+    background-image: url("../img/icon-map-pin.svg");
+    background-repeat: no-repeat;
+    background-size: 67px 100px;
+    width: 67px;
+    height: 100px;
+    bottom: 215px;
+    left: 219px;
+  }
 }
 
 .contact__map {
   background-color: $alabaster;
-  min-height: 457px;
+  height: 457px;
 }
 
 .contact__map-google {
   position: absolute;
   width: 100%;
+  z-index: 1;
 }
 
 .contact__wrapper-button {
@@ -152,6 +164,10 @@
 
   .contact__wrapper-map {
     margin-bottom: 52px;
+
+    &::after {
+      left: 364px;
+    }
   }
 
   .contact__wrapper-button {
@@ -166,6 +182,7 @@
 
 @media (min-width: $desktop-width) {
   .contact {
+    position: relative;
     margin-bottom: 102px;
   }
 
@@ -180,21 +197,27 @@
   }
 
   .contact__wrapper-container {
+    position: relative;
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
     width: 1150px;
     margin-right: auto;
     padding: 0 50px;
-    position: relative;
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-repeat: no-repeat;
+    background-size: auto 21px;
+    background-position: 50px 35px;
 
-    &::before {
+    &::after {
       @include pseudo;
-      background-image: url("../img/bg-zigzag-line.svg");
+      background-image: url("../img/icon-map-pin.svg");
       background-repeat: no-repeat;
-      background-size: auto 21px;
-      width: 100%;
-      height: 47px;
-      top: 37px;
+      background-size: 67px 100px;
+      width: 67px;
+      height: 100px;
+      bottom: 211px;
+      right: 270px;
     }
   }
 
@@ -223,6 +246,7 @@
   .contact__list {
     width: 372px;
     margin-left: 174px;
+    margin-bottom: 78px;
   }
 
   .contact__item--mail {
@@ -232,23 +256,34 @@
   .contact__wrapper-map {
     padding-top: 129px;
     margin-bottom: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+
+    &::after {
+      display: none;
+    }
   }
 
   .contact__map-google {
-    top: 129px;
-    right: 0;
+    position: absolute;
+    right: 51px;
+    top: 128px;
     width: 525px;
   }
 
   .contact__map {
     width: 525px;
     min-height: 457px;
+    position: absolute;
+    right: 51px;
+    top: 128px;
+    z-index: -1;
   }
 
   .contact__wrapper-button {
-    position: absolute;
-    bottom: 3px;
-    left: 225px;
+    align-self: flex-start;
+    margin-left: 175px;
 
     &::before {
       display: none;

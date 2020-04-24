@@ -43,5 +43,6 @@
   .social__list {
     @include reset;
     padding-top: 8px;
+    border-bottom: 0;
   }
 }
