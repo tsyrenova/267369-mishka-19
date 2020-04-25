@@ -25,3 +25,11 @@ modalForm.addEventListener("submit", function (evt) {
   evt.preventDefault();
   modalOpen.classList.toggle("visual-hidden");
 });
+
+document.addEventListener("keydown", function (evt) {
+  const isEscKey = evt.key === "Escape" || evt.key === "Esc";
+
+  if (isEscKey) {
+    modalOpen.classList.toggle("visual-hidden");
+  }
+});

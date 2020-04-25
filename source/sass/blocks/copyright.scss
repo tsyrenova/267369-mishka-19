@@ -19,7 +19,7 @@
 
   &:hover,
   &:focus {
-    & + .copyright__icon path {
+    & .copyright__icon path {
       fill: $puerto-rico;
     }
   }

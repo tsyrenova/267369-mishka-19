@@ -51,11 +51,7 @@
   }
 
   .reviews__wrapper {
-    // background-color: none;
     position: relative;
-    // background-image: linear-gradient(to right, $seashell 45.6%, white 45.6%);
-    // background-repeat: no-repeat;
-    // background-size: 100% 100%;
     margin-bottom: 0;
 
     &::before {
@@ -67,6 +63,10 @@
       height: 457px;
       top: 0;
       left: 0;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/review@2x.jpg");
+      }
     }
   }
 
@@ -139,6 +139,10 @@
       height: 457px;
       top: 0;
       left: 0;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/review@2x.jpg");
+      }
     }
 
     .reviews__title {

@@ -231,6 +231,10 @@
   height: 24px;
   top: 34px;
   right: 38px;
+
+  & path {
+    fill: $black-20;
+  }
 }
 
 .form__icon--email {
@@ -239,6 +243,10 @@
   height: 30px;
   top: 36px;
   right: 29px;
+
+  & path {
+    fill: $black-20;
+  }
 }
 
 .form__text {
