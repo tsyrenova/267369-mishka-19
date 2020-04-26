@@ -130,7 +130,7 @@
 .main-header__search-link[href]:focus {
   color: $black-hover;
 
-  & + .main-header__search-icon--search {
+  & .main-header__search-icon--search {
     opacity: 1;
 
     & path {
@@ -142,7 +142,7 @@
 .main-header__search-link[href]:active {
   color: $black-active;
 
-  & + .main-header__search-icon--search {
+  & .main-header__search-icon--search {
     opacity: 0.3;
   }
 }
@@ -151,7 +151,7 @@
 .main-header__backet-link[href]:focus {
   color: $black-hover;
 
-  & + .main-header__backet-icon--backet {
+  & .main-header__backet-icon--backet {
     opacity: 1;
 
     & path {
@@ -163,7 +163,7 @@
 .main-header__backet-link[href]:active {
   color: $black-active;
 
-  & + .main-header__backet-icon--backet {
+  & .main-header__backet-icon--backet {
     opacity: 0.3;
   }
 }
@@ -221,7 +221,7 @@
     display: none;
   }
 
-  .main-header__search-link {
+  .main-header__search-text {
     display: none;
   }
 
