@@ -1,12 +1,12 @@
 .page-footer {
-  background-color: $seashell;
   min-height: 160px;
+  background-color: $seashell;
 }
 
 .page-footer__container {
   width: 320px;
-  padding: 0 30px;
   margin: 0 auto;
+  padding: 0 30px;
 }
 
 .page-footer__logo {
@@ -23,11 +23,11 @@
   }
 
   .page-footer__container {
-    width: $tablet-width;
-    padding: 0 50px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    width: $tablet-width;
+    padding: 0 50px;
     padding-top: 0;
   }
 

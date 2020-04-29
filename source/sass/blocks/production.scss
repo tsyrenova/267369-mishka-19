@@ -26,26 +26,26 @@
   display: block;
   width: 108px;
   height: 34px;
-  fill: $downy;
   padding-left: 9px;
+  fill: $downy;
 }
 
 .production__title {
   @include font-title(17px, 24px);
-  padding-top: 11px;
   margin-left: auto;
+  padding-top: 11px;
 }
 
 .production__video-image {
-  background-color: $seashell;
   margin-bottom: 10px;
+  background-color: $seashell;
 }
 
 .production__text {
   @include font-main(13px, 24px);
+  margin-bottom: 26px;
   padding-left: 35px;
   padding-right: 35px;
-  margin-bottom: 26px;
 }
 
 .production__button {
@@ -79,6 +79,10 @@
   }
 }
 
+.production__button-play {
+  fill: $downy;
+}
+
 @media (min-width: $tablet-width) {
   .production {
     margin-bottom: 63px;
@@ -91,8 +95,8 @@
   }
 
   .production__title-wrapper {
-    order: 1;
     margin-bottom: 0;
+    order: 1;
   }
 
   .production__icon-video {
@@ -100,10 +104,9 @@
   }
 
   .production__title {
-    font-size: 20px;
     margin-left: 0;
-
     padding-top: 8px;
+    font-size: 20px;
   }
 
   .production__video-wrapper {
@@ -140,8 +143,8 @@
   }
 
   .production__wrapper {
-    flex-wrap: wrap;
     position: relative;
+    flex-wrap: wrap;
     width: 368px;
     margin-left: auto;
     padding-left: 78px;
@@ -152,10 +155,10 @@
 
   .production__video-image {
     position: absolute;
-    width: 682px;
-    height: auto;
     top: -37px;
     left: -760px;
+    width: 682px;
+    height: auto;
   }
 
   .production__video-button {

@@ -3,8 +3,8 @@
   @include font-title(17px, 20px, $text-align: center, $color: $tundora);
   display: block;
   text-transform: uppercase;
-  border: 2px solid $tundora;
   background-color: transparent;
+  border: 2px solid $tundora;
 
   &:hover,
   &:focus {

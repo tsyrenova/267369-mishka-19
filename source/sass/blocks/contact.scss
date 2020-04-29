@@ -3,19 +3,19 @@
 
   &::before {
     @include pseudo;
+    top: 13px;
+    width: 100%;
+    height: 8px;
     background-image: url("../img/bg-zigzag-line.svg");
     background-repeat: repeat-x;
     background-size: auto 7px;
-    width: 100%;
-    height: 8px;
-    top: 13px;
   }
 }
 
 .contact__container {
   width: 320px;
-  padding: 0 30px;
   margin: 0 auto;
+  padding: 0 30px;
 }
 
 .contact__title {
@@ -47,8 +47,8 @@
 
 .contact__item-link {
   @include font-main(15px, 30px);
-  text-decoration: none;
   padding-bottom: 4px;
+  text-decoration: none;
   border-bottom: 1px solid $downy-two;
 
   &:hover,
@@ -58,8 +58,8 @@
   }
 
   &:active {
-    opacity: 0.3;
     border-bottom: 1px solid $aqua-spring;
+    opacity: 0.3;
   }
 }
 
@@ -69,25 +69,27 @@
 
   &::after {
     @include pseudo;
+    bottom: 215px;
+    left: 219px;
+    width: 67px;
+    height: 100px;
     background-image: url("../img/icon-map-pin.svg");
     background-repeat: no-repeat;
     background-size: 67px 100px;
-    width: 67px;
-    height: 100px;
-    bottom: 215px;
-    left: 219px;
   }
 }
 
 .contact__map {
-  background-color: $alabaster;
   height: 457px;
+  background-color: $alabaster;
 }
 
 .contact__map-google {
   position: absolute;
-  width: 100%;
   z-index: 1;
+  width: 100%;
+  height: 457px;
+  border: 0;
 }
 
 .contact__wrapper-button {
@@ -108,9 +110,9 @@
 
   .contact__wrapper {
     &::before {
-      background-size: auto 17px;
-      height: 22px;
       top: 48px;
+      height: 22px;
+      background-size: auto 17px;
     }
   }
 
@@ -122,17 +124,17 @@
   .contact__title {
     @include font-title(43px, 50px);
     position: relative;
-    padding-top: 125px;
     margin-left: -4px;
     margin-bottom: 49px;
+    padding-top: 125px;
 
     &::after {
       @include pseudo;
-      background-image: url("../img/icon-flag.svg");
-      width: 46px;
-      height: 81px;
       bottom: -16px;
       right: 4px;
+      width: 46px;
+      height: 81px;
+      background-image: url("../img/icon-flag.svg");
     }
   }
 
@@ -211,13 +213,13 @@
 
     &::after {
       @include pseudo;
+      bottom: 211px;
+      right: 270px;
+      width: 67px;
+      height: 100px;
       background-image: url("../img/icon-map-pin.svg");
       background-repeat: no-repeat;
       background-size: 67px 100px;
-      width: 67px;
-      height: 100px;
-      bottom: 211px;
-      right: 270px;
     }
   }
 
@@ -233,12 +235,12 @@
 
   .contact__title {
     @include font-title(53px, 57px);
-    padding-top: 155px;
     margin-left: 170px;
+    padding-top: 155px;
 
     &::after {
-      bottom: -16px;
       right: 0;
+      bottom: -16px;
       left: -107px;
     }
   }
@@ -254,11 +256,11 @@
   }
 
   .contact__wrapper-map {
-    padding-top: 129px;
-    margin-bottom: 0;
     position: absolute;
     right: 0;
     top: 0;
+    margin-bottom: 0;
+    padding-top: 129px;
 
     &::after {
       display: none;
@@ -267,18 +269,18 @@
 
   .contact__map-google {
     position: absolute;
-    right: 51px;
     top: 128px;
+    right: 51px;
     width: 525px;
   }
 
   .contact__map {
+    position: absolute;
+    top: 128px;
+    right: 51px;
+    z-index: -1;
     width: 525px;
     min-height: 457px;
-    position: absolute;
-    right: 51px;
-    top: 128px;
-    z-index: -1;
   }
 
   .contact__wrapper-button {

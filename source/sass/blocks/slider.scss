@@ -11,8 +11,8 @@
   display: block;
   width: 130px;
   height: 52px;
-  border: none;
   background-color: transparent;
+  border: none;
   outline: 1px solid $gallery;
 
   &--forward {
@@ -20,12 +20,12 @@
 
     &::before {
       @include pseudo;
-      background-image: url("../img/icon-left-arrow.svg");
-      background-repeat: no-repeat;
-      width: 50px;
-      height: 26px;
       top: 13px;
       left: 38px;
+      width: 50px;
+      height: 26px;
+      background-image: url("../img/icon-left-arrow.svg");
+      background-repeat: no-repeat;
     }
   }
 
@@ -34,12 +34,12 @@
 
     &::after {
       @include pseudo;
-      background-image: url("../img/icon-right-arrow.svg");
-      background-repeat: no-repeat;
-      width: 50px;
-      height: 26px;
       top: 13px;
       right: 42px;
+      width: 50px;
+      height: 26px;
+      background-image: url("../img/icon-right-arrow.svg");
+      background-repeat: no-repeat;
     }
   }
 

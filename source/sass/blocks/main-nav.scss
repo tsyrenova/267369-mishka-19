@@ -4,25 +4,25 @@
 
 @media (min-width: $tablet-width) {
   .main-nav {
-    order: 3;
     padding-top: 20px;
+    order: 3;
   }
 
   .main-nav__text {
     @include font-main(15px, 24px);
+    position: absolute;
     display: block;
     text-align: right;
-    position: absolute;
-    bottom: -42px;
     right: 51px;
+    bottom: -42px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .main-nav {
     width: auto;
-    order: 0;
     padding-top: 0;
+    order: 0;
   }
 
   .main-nav__wrapper {

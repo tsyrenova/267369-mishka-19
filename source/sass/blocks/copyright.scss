@@ -13,9 +13,9 @@
 }
 
 .copyright__link {
-  margin-right: 23px;
   display: flex;
   align-content: center;
+  margin-right: 23px;
 
   &:hover,
   &:focus {
@@ -35,8 +35,8 @@
 
 .copyright__text {
   @include font-title(19px, 18px);
-  padding-top: 19px;
   margin-right: 17px;
+  padding-top: 19px;
 }
 
 @media (min-width: $tablet-width) {

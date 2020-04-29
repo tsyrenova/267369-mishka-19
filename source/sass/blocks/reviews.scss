@@ -4,8 +4,8 @@
 
 .reviews__container {
   width: 320px;
-  padding: 0 30px;
   margin: 0 auto;
+  padding: 0 30px;
 }
 
 .reviews__item {
@@ -36,18 +36,16 @@
   width: 259px;
   padding-top: 15px;
   padding-bottom: 13px;
-  // @include font-title(18px, 20px, $text-align: center, $color: $tundora);
-  // text-transform: uppercase;
 }
 
 @media (min-width: $tablet-width) {
   .reviews__container {
     position: relative;
-    width: $tablet-width;
-    padding: 0 50px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    width: $tablet-width;
+    padding: 0 50px;
   }
 
   .reviews__wrapper {
@@ -56,13 +54,13 @@
 
     &::before {
       @include pseudo;
+      top: 0;
+      left: 0;
+      width: 350px;
+      height: 457px;
       background-image: url("../img/review@1x.jpg");
       background-repeat: no-repeat;
       background-size: cover;
-      width: 350px;
-      height: 457px;
-      top: 0;
-      left: 0;
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
         background-image: url("../img/review@2x.jpg");
@@ -72,11 +70,11 @@
 
   .reviews__title {
     @include font-title(43px, 50px);
+    z-index: 1;
+    flex-grow: 1;
     margin-bottom: 33px;
     padding-top: 42px;
     order: 0;
-    flex-grow: 1;
-    z-index: 1;
   }
 
   .reviews__list {
@@ -84,8 +82,8 @@
   }
 
   .reviews__text {
-    font-size: 17px;
     margin-bottom: 59px;
+    font-size: 17px;
   }
 
   .reviews__avtor-name {
@@ -94,18 +92,18 @@
 
   .reviews__toggles {
     position: absolute;
-    bottom: 0;
     right: 0;
-    order: 3;
+    bottom: 0;
     z-index: 1;
+    order: 3;
   }
 
   .reviews__button {
-    order: 1;
     top: 79px;
     right: 125px;
     width: 175px;
     margin-top: 49px;
+    order: 1;
   }
 }
 
@@ -122,23 +120,23 @@
   .reviews__container {
     position: relative;
     width: $desktop-width;
+    margin-bottom: 0;
     padding: 0 50px;
     background-image: linear-gradient(to right, #f1f1f1 30%, white 30%);
     background-repeat: no-repeat;
     background-position-x: 50px;
     background-size: 100% 100%;
-    margin-bottom: 0;
 
     &::before {
       @include pseudo;
+      top: 0;
+      left: 0;
+      width: 401px;
+      height: 457px;
       background-image: url("../img/review@1x.jpg");
       background-repeat: no-repeat;
       background-position-x: 50px;
       background-size: 351px 457px;
-      width: 401px;
-      height: 457px;
-      top: 0;
-      left: 0;
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
         background-image: url("../img/review@2x.jpg");
@@ -152,9 +150,9 @@
     }
 
     .reviews__list {
+      z-index: 1;
       margin-left: 173px;
       margin-right: 77px;
-      z-index: 1;
     }
 
     .reviews__item {

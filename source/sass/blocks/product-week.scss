@@ -4,27 +4,27 @@
 
   &::after {
     @include pseudo;
+    bottom: 7px;
+    width: 100%;
+    height: 8px;
     background-image: url("../img/bg-zigzag-line.svg");
     background-repeat: repeat-x;
     background-size: auto 7px;
-    width: 100%;
-    height: 8px;
-    bottom: 7px;
   }
 }
 
 .product-week__title {
   @include font-title(25px, 30px);
-  padding-top: 27px;
   margin: 0;
   margin-bottom: 6px;
+  padding-top: 27px;
 }
 
 .product-week__text {
   @include font-title(17px, 20px, $color: $downy);
   @include reset;
-  text-transform: uppercase;
   margin-bottom: 22px;
+  text-transform: uppercase;
 }
 
 .product-week__description {
@@ -34,9 +34,9 @@
 
 .product-week__propeties {
   @include font-main(15px, 24px);
-  border-collapse: collapse;
   width: 100%;
   margin-bottom: 26px;
+  border-collapse: collapse;
 }
 
 .product-week__propeties-row {
@@ -56,8 +56,8 @@
 .product-week__image {
   width: 260px;
   height: auto;
-  background-color: $alabaster;
   margin-bottom: 5px;
+  background-color: $alabaster;
 }
 
 .product-week__price {
@@ -78,18 +78,18 @@
 
     &::before {
       @include pseudo;
+      top: -10px;
+      width: 100%;
+      height: 24px;
       background-image: url("../img/bg-zigzag-fill.svg");
       background-repeat: repeat-x;
       background-size: auto 22px;
-      width: 100%;
-      height: 24px;
-      top: -10px;
     }
 
     &::after {
-      background-size: auto 17px;
-      height: 21px;
       bottom: 9px;
+      height: 21px;
+      background-size: auto 17px;
     }
   }
 
@@ -102,9 +102,9 @@
   }
 
   .product-week__wrapper-title {
-    width: 100%;
     display: flex;
     align-items: center;
+    width: 100%;
   }
 
   .product-week__title {
@@ -115,10 +115,10 @@
   }
 
   .product-week__text {
-    text-align: center;
-    line-height: 17px;
     width: 70px;
     margin-bottom: 0;
+    line-height: 17px;
+    text-align: center;
   }
 
   .product-week__wrapper-profile {
@@ -140,18 +140,18 @@
 
   .product-week__image {
     position: absolute;
-    width: 333px;
-    height: auto;
     top: 154px;
     right: 81px;
-    background-color: $seashell;
+    width: 333px;
+    height: auto;
     margin-bottom: 0;
+    background-color: $seashell;
   }
 
   .product-week__price {
-    font-size: 20px;
     margin-bottom: 34px;
     padding-left: 71px;
+    font-size: 20px;
   }
 
   .product-week__link {
@@ -164,14 +164,14 @@
 @media (min-width: $desktop-width) {
   .product-week {
     min-height: 810px;
-    padding-bottom: 0;
     margin-bottom: 54px;
+    padding-bottom: 0;
 
     &::before {
+      top: -15px;
+      height: 35px;
       background-repeat: repeat-x;
       background-size: auto 36px;
-      height: 35px;
-      top: -15px;
     }
 
     &::after {
@@ -181,11 +181,11 @@
 
   .product-week__wrapper {
     position: relative;
+    padding-bottom: 101px;
     background-image: url("../img/bg-zigzag-line.svg");
     background-repeat: repeat-x;
     background-size: 100% 21px;
     background-position: left bottom;
-    padding-bottom: 101px;
   }
 
   .product-week__wrapper-title {
@@ -214,10 +214,10 @@
   }
 
   .product-week__image {
-    width: 525px;
-    height: auto;
     top: 74px;
     right: 50px;
+    width: 525px;
+    height: auto;
   }
 
   .product-week__price {

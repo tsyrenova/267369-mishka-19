@@ -24,8 +24,8 @@
 
   &::after {
     @include pseudo;
-    left: -74px;
     bottom: 0;
+    left: -74px;
     width: 320px;
     height: 1px;
     background-color: $gallery;
@@ -34,8 +34,8 @@
 
 .site-list__item:first-child .site-list__item-link::before {
   @include pseudo;
-  left: -74px;
   top: 0;
+  left: -74px;
   width: 320px;
   height: 1px;
   background-color: $gallery;
@@ -55,8 +55,8 @@
   }
 
   .site-list__item {
-    min-height: auto;
     width: 166px;
+    min-height: auto;
 
     &::before,
     &::after {
