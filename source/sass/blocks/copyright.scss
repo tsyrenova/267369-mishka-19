@@ -6,20 +6,21 @@
   width: 50px;
   height: auto;
   padding-top: 9px;
+  fill: $downy;
 
-  & path {
-    fill: $downy;
-  }
+  // & path {
+  //   fill: $downy;
+  // }
 }
 
 .copyright__link {
-  margin-right: 23px;
   display: flex;
   align-content: center;
+  margin-right: 23px;
 
   &:hover,
   &:focus {
-    & .copyright__icon path {
+    & .copyright__icon {
       fill: $puerto-rico;
     }
   }
@@ -35,8 +36,8 @@
 
 .copyright__text {
   @include font-title(19px, 18px);
-  padding-top: 19px;
   margin-right: 17px;
+  padding-top: 19px;
 }
 
 @media (min-width: $tablet-width) {

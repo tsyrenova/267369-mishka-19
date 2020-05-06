@@ -24,17 +24,17 @@
 .range__item-container {
   position: relative;
   width: 320px;
-  padding: 0 30px;
   margin: 0 auto;
+  padding: 0 30px;
 }
 
 .range__item-link {
   @include font-title(19px, 24px);
-  color: $white;
   display: block;
   padding-right: 83px;
   padding-top: 26px;
   padding-bottom: 29px;
+  color: $white;
 
   &:active {
     color: $white-30;
@@ -64,8 +64,8 @@
 
   .range__container {
     width: 768px;
-    padding: 0 50px;
     margin: 0 auto;
+    padding: 0 50px;
   }
 
   .range__list {
@@ -74,7 +74,6 @@
 
   .range__item-container {
     width: 100%;
-    // padding: 0 50px;
   }
 
   .range__item {
@@ -83,9 +82,9 @@
 
   .range__item-link {
     @include font-title(20px, 30px);
-    color: $white;
     padding-top: 27px;
     padding-left: 6px;
+    color: $white;
   }
 
   .range__item__icon {

@@ -20,8 +20,8 @@
 
   .advantages__item-icon {
     display: block;
-    fill: $downy;
     margin-bottom: 18px;
+    fill: $downy;
 
     &--flower {
       margin-left: 8px;
@@ -79,14 +79,14 @@
     }
 
     &--money {
-      order: 2;
       margin-top: 26px;
       margin-bottom: 25px;
+      order: 2;
     }
 
     &--heart {
-      order: 4;
       margin-top: 16px;
+      order: 4;
     }
 
     &--ball {
@@ -94,13 +94,13 @@
     }
 
     &--rocket {
-      order: 3;
       margin-top: 28px;
+      order: 3;
     }
 
     &--gift {
-      order: 5;
       margin-top: 15px;
+      order: 5;
     }
   }
 }

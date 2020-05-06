@@ -5,9 +5,10 @@
 .social__list {
   @include list-reset;
   display: flex;
-  padding-top: 25px;
+  flex-wrap: wrap;
   justify-content: space-between;
   margin: 0 auto;
+  padding-top: 25px;
   padding-left: 57px;
   padding-right: 60px;
   padding-bottom: 24px;
@@ -24,13 +25,11 @@
 .social__icon {
   &:hover,
   &:focus {
-    & path {
-      fill: $puerto-rico;
-    }
+    fill: $puerto-rico;
+  }
 
-    &:active {
-      opacity: 0.3;
-    }
+  &:active {
+    opacity: 0.3;
   }
 }
 
