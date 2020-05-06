@@ -43,13 +43,13 @@
 
   &::before {
     @include pseudo;
-    top: -3px;
+    top: 0;
     left: 3px;
-    width: 21px;
-    height: 23px;
+    width: 40px;
+    height: 33px;
     background-image: url("../img/icon-menu-open.svg");
     background-repeat: no-repeat;
-    background-size: 21px 23px;
+    background-size: 21px 17px;
   }
 
   &--close::before {

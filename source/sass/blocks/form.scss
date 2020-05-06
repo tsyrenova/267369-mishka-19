@@ -119,10 +119,6 @@
   }
 }
 
-.form__input[type="radio"] {
-  display: none;
-}
-
 .form__input[type="radio"]:checked + .form__label::after {
   @include pseudo;
   top: 3px;
@@ -159,10 +155,6 @@
   }
 }
 
-.form__input[type="checkbox"] {
-  display: none;
-}
-
 .form__input[type="checkbox"]:checked + .form__label::after {
   @include pseudo;
   top: 4px;
@@ -172,6 +164,11 @@
   background-image: url("../img/icon-tick.svg");
   background-size: 22px 16px;
   background-repeat: no-repeat;
+}
+
+.form__input[type="checkbox"]:focus + .form__label::before,
+.form__input[type="radio"]:focus + .form__label::before {
+  outline: rgb(59, 153, 252) auto 5px;
 }
 
 .form__input {
@@ -253,6 +250,8 @@
   padding-left: 15px;
   padding-top: 14px;
   border: 2px solid $black;
+  resize: none;
+  overflow: auto;
 
   &:hover,
   &:focus {
@@ -260,6 +259,11 @@
   }
 
   &::placeholder:active {
+    color: $tundora;
+  }
+
+  &:-ms-input-placeholder {
+    @include font-main(17px, 18px);
     color: $tundora;
   }
 }
@@ -524,6 +528,7 @@
 
     &--checkbox {
       margin-bottom: 11px;
+      padding-left: 0;
     }
   }
 
@@ -539,6 +544,10 @@
 
     &--color:nth-child(2n) {
       width: 262px;
+    }
+
+    &--color {
+      padding-left: 55px;
     }
 
     &--name {

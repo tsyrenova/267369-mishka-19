@@ -6,10 +6,11 @@
   width: 50px;
   height: auto;
   padding-top: 9px;
+  fill: $downy;
 
-  & path {
-    fill: $downy;
-  }
+  // & path {
+  //   fill: $downy;
+  // }
 }
 
 .copyright__link {
@@ -19,7 +20,7 @@
 
   &:hover,
   &:focus {
-    & .copyright__icon path {
+    & .copyright__icon {
       fill: $puerto-rico;
     }
   }

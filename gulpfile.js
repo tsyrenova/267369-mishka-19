@@ -33,7 +33,7 @@ gulp.task("css", function () {
 });
 
 gulp.task("sprite", function () {
-  return gulp.src("source/img/icon-*.svg")
+  return gulp.src("source/img/**/*.svg")
     .pipe(svgstore({
       inlineSvg: true
     }))
@@ -86,6 +86,7 @@ gulp.task("server", function () {
 
 gulp.task("copy", function () {
   return gulp.src([
+    "sorce/css/**",
     "source/fonts/**/*.{woff,woff2}",
     "source/img/**",
     "source/js/**",

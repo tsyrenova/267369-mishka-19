@@ -2,7 +2,7 @@
   background-image: $seashell;
 }
 
-.products_description-wrapper {
+.products__description-wrapper {
   display: flex;
   flex-direction: column;
   padding: 23px 25px 27px 28px;
@@ -71,7 +71,7 @@
 }
 
 @media (min-width: $tablet-width) {
-  .products_description-wrapper {
+  .products__description-wrapper {
     width: 327px;
     padding: 26px 25px 26px 27px;
   }
@@ -109,7 +109,7 @@
     width: 316px;
   }
 
-  .products_description-wrapper {
+  .products__description-wrapper {
     width: 315px;
     height: 100%;
     padding-top: 0;
