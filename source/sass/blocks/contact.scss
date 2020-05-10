@@ -39,7 +39,7 @@
   }
 
   &--email,
-  &--adress {
+  &--address {
     width: 146px;
     margin-left: 29px;
   }
@@ -154,7 +154,7 @@
     font-size: 17px;
 
     &--email,
-    &--adress {
+    &--address {
       width: 230px;
     }
 
@@ -163,7 +163,7 @@
       margin-left: 23px;
     }
 
-    &--adress {
+    &--address {
       margin-left: 26px;
     }
 
@@ -204,7 +204,7 @@
 @media (min-width: $desktop-width) {
   .contact {
     position: relative;
-    margin-bottom: 102px;
+    margin-bottom: 106px;
   }
 
   .contact__wrapper {

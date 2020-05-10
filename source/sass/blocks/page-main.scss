@@ -54,7 +54,7 @@
     border-top: none;
 
     &--image {
-      min-height: 586px;
+      min-height: 585px;
       background-image: url("../img/hero-tablet@1x.jpg");
       background-repeat: no-repeat;
       background-size: 1150px 746px;
@@ -128,6 +128,7 @@
       &::before {
         height: 34px;
         background-size: auto 34px;
+        background-position: left 41px bottom;
       }
     }
 

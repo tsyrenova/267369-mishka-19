@@ -22,7 +22,7 @@
   margin-bottom: 27px;
 }
 
-.reviews__avtor-name {
+.reviews__author-name {
   @include font-title(17px, 24px);
 }
 
@@ -87,7 +87,7 @@
     font-size: 17px;
   }
 
-  .reviews__avtor-name {
+  .reviews__author-name {
     font-size: 18px;
   }
 
@@ -165,7 +165,7 @@
       margin-bottom: 37px;
     }
 
-    .reviews__avtor-name {
+    .reviews__author-name {
       font-size: 17px;
     }
 

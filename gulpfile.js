@@ -86,8 +86,8 @@ gulp.task("server", function () {
 
 gulp.task("copy", function () {
   return gulp.src([
-    "sorce/css/**",
     "source/fonts/**/*.{woff,woff2}",
+    "source/css/**",
     "source/img/**",
     "source/js/**",
     "source/*.ico"

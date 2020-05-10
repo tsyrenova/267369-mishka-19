@@ -106,7 +106,7 @@
   }
 
   .products__image {
-    width: 316px;
+    width: 315px;
   }
 
   .products__description-wrapper {
@@ -123,6 +123,15 @@
 
   .products__order-wrapper {
     padding-top: 25px;
+    justify-content: flex-start;
+  }
+
+  .products__button {
+    margin-left: auto;
+  }
+
+  .products__icon {
+    overflow: hidden;
   }
 
   .products__price {

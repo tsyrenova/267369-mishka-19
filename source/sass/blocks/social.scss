@@ -43,5 +43,14 @@
     @include reset;
     padding-top: 8px;
     border-bottom: 0;
+    justify-content: flex-start;
+  }
+
+  .social__item {
+    margin-right: 41px;
+
+    &:nth-child(3n + 3) {
+      margin-right: 0;
+    }
   }
 }

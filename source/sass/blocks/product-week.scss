@@ -32,18 +32,18 @@
   margin-bottom: 22px;
 }
 
-.product-week__propeties {
+.product-week__properties {
   @include font-main(15px, 24px);
   width: 100%;
   margin-bottom: 26px;
   border-collapse: collapse;
 }
 
-.product-week__propeties-row {
+.product-week__properties-row {
   border-bottom: 1px solid $gallery;
 }
 
-.product-week__propeties-col {
+.product-week__properties-col {
   padding: 4px;
   padding-bottom: 10px;
   padding-left: 1px;
@@ -134,7 +134,7 @@
     padding-top: 30px;
   }
 
-  .product-week__propeties-col--value {
+  .product-week__properties-col--value {
     padding-left: 0;
   }
 
@@ -163,8 +163,8 @@
 
 @media (min-width: $desktop-width) {
   .product-week {
-    min-height: 810px;
-    margin-bottom: 54px;
+    min-height: 814px;
+    margin-bottom: 52px;
     padding-bottom: 0;
 
     &::before {
@@ -179,13 +179,21 @@
     }
   }
 
-  .product-week__wrapper {
+  .product-week__wrapper.container {
     position: relative;
-    padding-bottom: 101px;
-    background-image: url("../img/bg-zigzag-line.svg");
-    background-repeat: repeat-x;
-    background-size: 100% 21px;
-    background-position: left bottom;
+
+    &::after {
+      @include pseudo;
+      width: 100%;
+      height: 26px;
+      bottom: -98px;
+      left: 0;
+      background-image: url("../img/bg-zigzag-line.svg");
+      background-repeat: no-repeat;
+      background-size: 1050px 24px;
+      background-position: left 50px bottom 0;
+      transform: rotate(180deg);
+    }
   }
 
   .product-week__wrapper-title {

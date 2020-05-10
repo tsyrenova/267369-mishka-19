@@ -7,8 +7,6 @@
   <meta name="format-detection" content="telephone=no">
   <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/opensansbold.woff2" as="font" crossorigin="anonymous">
-  <link rel="preload" href="fonts/opensans.woff" as="font" crossorigin="anonymous">
-  <link rel="preload" href="fonts/opensansbold.woff" as="font" crossorigin="anonymous">
   <link href="css/style.min.css" rel="stylesheet">
   <title>HTML Academy: Мишка</title>
 </head>
@@ -52,10 +50,10 @@
           </svg>
         </a>
       </div>
-      <div class="main-header__backet">
-        <a class="main-header__backet-link" href="#">
-          <span class="main-header__backet-text">Корзина: пока пуста</span>
-          <svg class="main-header__backet-icon main-header__backet-icon--backet" width="20" height="19">
+      <div class="main-header__basket">
+        <a class="main-header__basket-link" href="#">
+          <span class="main-header__basket-text">Корзина: пока пуста</span>
+          <svg class="main-header__basket-icon main-header__basket-icon--basket" width="20" height="19">
             <use xlink:href="#icon-cart"></use>
           </svg>
         </a>
@@ -170,7 +168,7 @@
         <fieldset class="form__fieldset form__fieldset--email container">
           <label class="form__title form__title--email" for="post">E-mail</label>
           <input class="form__input form__input--email" type="email" id="post" name="post" placeholder="Ваш Email*">
-          <svg class="form__icon form__icon--email" width="32px" height="32px">
+          <svg class="form__icon form__icon--email" width="32" height="32">
             <use xlink:href="#icon-mail"></use>
           </svg>
         </fieldset>
@@ -179,7 +177,7 @@
       <fieldset class="form__fieldset form__fieldset--additionally container">
         <div class="form__wrapper-additionally">
           <h2 class="form__title form__title--additionally">Доп</h2>
-          <textarea class="form__textarea" name="comment" id="comment" rows="8"
+          <textarea class="form__textarea" name="comment" id="comment" rows="5"
             placeholder="Опишите все ваши пожелания к заказу"></textarea>
         </div>
       </fieldset>

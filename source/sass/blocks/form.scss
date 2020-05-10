@@ -246,7 +246,9 @@
 }
 
 .form__textarea {
+  @include font-main(17px, 18px);
   width: 260px;
+  min-height: 141px;
   padding-left: 15px;
   padding-top: 14px;
   border: 2px solid $black;

@@ -1,5 +1,5 @@
 .advantages {
-  margin-bottom: 39px;
+  margin-bottom: 51px;
 }
 
 .advantages__title {
@@ -13,50 +13,111 @@
 
 .advantages__item {
   @include font-title(17px, 20px);
-  padding-top: 4px;
-  padding-bottom: 16px;
-  margin-bottom: 11px;
+  margin-bottom: 22px;
   padding-right: 10px;
+  padding-top: 60px;
 
-  .advantages__item-icon {
-    display: block;
-    margin-bottom: 18px;
-    fill: $downy;
+  &--flower {
+    position: relative;
 
-    &--flower {
-      margin-left: 8px;
+    &::before {
+      @include pseudo;
+      top: 4px;
+      left: 8px;
+      width: 32px;
+      height: 37px;
+      background-image: url("../img/icon-feature-flower.svg");
+      background-repeat: no-repeat;
+      background-size: 32px 37px;
     }
+  }
 
-    &--money {
-      margin-top: -2px;
-      margin-bottom: 26px;
+  &--money {
+    position: relative;
+    margin-top: -2px;
+    margin-bottom: 26px;
+
+    &::before {
+      @include pseudo;
+      top: 8px;
+      left: 0;
+      width: 47px;
+      height: 27px;
+      background-image: url("../img/icon-feature-money.svg");
+      background-repeat: no-repeat;
+      background-size: 47px 27px;
     }
+  }
 
-    &--heart {
-      margin-top: 4px;
-      margin-left: 7px;
+  &--heart {
+    position: relative;
+    margin-top: 4px;
+
+    &::before {
+      @include pseudo;
+      top: 10px;
+      left: 6px;
+      width: 35px;
+      height: 28px;
+      background-image: url("../img/icon-feature-heart.svg");
+      background-repeat: no-repeat;
+      background-size: 35px 28px;
     }
+  }
 
-    &--ball {
-      margin-top: 2px;
+  &--ball {
+    position: relative;
+    margin-top: 2px;
+
+    &::before {
+      @include pseudo;
+      top: 8px;
+      left: 3px;
+      width: 35px;
+      height: 34px;
+      background-image: url("../img/icon-feature-ball.svg");
+      background-repeat: no-repeat;
+      background-size: 35px 34px;
     }
+  }
 
-    &--rocket {
-      margin-top: 2px;
-      margin-left: -5px;
-      margin-bottom: 27px;
+  &--rocket {
+    position: relative;
+    margin-top: 2px;
+    margin-bottom: 27px;
+
+    &::before {
+      @include pseudo;
+      top: 10px;
+      left: -6px;
+      width: 55px;
+      height: 23px;
+      background-image: url("../img/icon-feature-rocket.svg");
+      background-repeat: no-repeat;
+      background-size: 55px 23px;
     }
+  }
 
-    &--gift {
-      margin-top: 1px;
-      margin-left: 2px;
+  &--gift {
+    position: relative;
+    margin-top: 1px;
+
+    &::before {
+      @include pseudo;
+      top: 4px;
+      left: 3px;
+      width: 33px;
+      height: 32px;
+      background-image: url("../img/icon-feature-gift.svg");
+      background-repeat: no-repeat;
+      background-size: 33px 32px;
     }
   }
 }
 
 @media (min-width: $tablet-width) {
   .advantages {
-    margin-bottom: 56px;
+    margin-bottom: 59px;
   }
 
   .advantages__title {
@@ -72,34 +133,58 @@
   .advantages__item {
     @include font-title(20px, 22px);
     width: 305px;
-    margin-right: 27px;
+    margin-right: 29px;
+    padding-top: 56px;
 
     &--flower {
       order: 0;
+
+      &::before {
+        top: 3px;
+        left: 9px;
+      }
     }
 
     &--money {
-      margin-top: 26px;
+      margin-top: 31px;
       margin-bottom: 25px;
       order: 2;
+
+      &::before {
+        top: 4px;
+        left: 1px;
+      }
     }
 
     &--heart {
-      margin-top: 16px;
+      margin-top: 31px;
       order: 4;
+
+      &::before {
+        top: 6px;
+        left: 7px;
+      }
     }
 
     &--ball {
       order: 1;
+
+      &::before {
+        top: 4px;
+      }
     }
 
     &--rocket {
-      margin-top: 28px;
+      margin-top: 31px;
       order: 3;
+
+      &::before {
+        top: 7px;
+      }
     }
 
     &--gift {
-      margin-top: 15px;
+      margin-top: 29px;
       order: 5;
     }
   }
@@ -108,7 +193,7 @@
 @media (min-width: $desktop-width) {
   .advantages {
     margin-left: 0;
-    margin-bottom: 64px;
+    margin-bottom: 66px;
   }
 
   .advantages__title {
