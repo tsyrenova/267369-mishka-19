@@ -24,7 +24,7 @@
 
   .page-footer__container {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
     width: $tablet-width;
     padding: 0 50px;
@@ -34,6 +34,8 @@
   .page-footer__logo {
     display: block;
     width: 227px;
+    margin-top: 11px;
+    margin-right: 47px;
 
     &:hover,
     &:focus {
@@ -50,5 +52,9 @@
   .page-footer__container {
     width: $desktop-width;
     padding: 0 50px;
+  }
+
+  .page-footer__logo {
+    margin-right: 56px;
   }
 }

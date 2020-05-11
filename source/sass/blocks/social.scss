@@ -1,21 +1,22 @@
 .social {
+  width: 250px;
   margin-bottom: 9px;
 }
 
 .social__list {
   @include list-reset;
+
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: flex-start;
   margin: 0 auto;
-  padding-top: 25px;
-  padding-left: 57px;
-  padding-right: 60px;
-  padding-bottom: 24px;
+  padding: 25px 0 24px 57px;
   border-bottom: 1px solid $mercury;
 }
 
 .social__item {
+  margin-right: 41px;
+
   &--instagram,
   &--twitter {
     padding-top: 5px;
@@ -35,7 +36,8 @@
 
 @media (min-width: $tablet-width) {
   .social {
-    width: 143px;
+    width: 205px;
+    margin-top: 10px;
     margin-bottom: 0;
   }
 
@@ -48,9 +50,5 @@
 
   .social__item {
     margin-right: 41px;
-
-    &:nth-child(3n + 3) {
-      margin-right: 0;
-    }
   }
 }

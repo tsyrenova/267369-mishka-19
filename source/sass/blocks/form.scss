@@ -35,13 +35,13 @@
     }
   }
 
-  &--checkbox {
-    margin-bottom: 25px;
-  }
+  // &--checkbox {
+  //   margin-bottom: 25px;
+  // }
 
   &--name {
     margin-bottom: 7px;
-    padding-top: 4px;
+    // padding-top: 4px;
   }
 
   &--phone {
@@ -72,6 +72,7 @@
   text-transform: uppercase;
 
   &--name {
+    margin-top: 0;
     margin-bottom: 30px;
   }
 
@@ -296,6 +297,7 @@
     }
 
     &--checkbox {
+      margin-bottom: 29px;
       padding-top: 41px;
       padding-bottom: 10px;
     }

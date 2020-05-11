@@ -10,50 +10,6 @@
     background-color: $viking;
     transform: translateY(-5px);
   }
-
-  &--interior {
-    position: relative;
-
-    &::after {
-      @include pseudo;
-      top: 23px;
-      right: 117px;
-      width: 40px;
-      height: 62px;
-      background-image: url("../img/icon-interior.svg");
-      background-repeat: no-repeat;
-      background-size: 40px 62px;
-      opacity: 0.5;
-    }
-  }
-
-  &--toy {
-    position: relative;
-
-    &::after {
-      @include pseudo;
-      top: 21px;
-      right: 108px;
-      width: 60px;
-      height: 60px;
-      background-image: url("../img/icon-toy.svg");
-      background-repeat: no-repeat;
-      background-size: 60px 60px;
-      opacity: 0.5;
-    }
-  }
-}
-
-.range__item--interior,
-.range__item--toy {
-  &:hover::after,
-  &:focus::after {
-    opacity: 0.7;
-  }
-
-  &:active::after {
-    opacity: 0.3;
-  }
 }
 
 .range__item--interior:hover::before {
@@ -87,19 +43,63 @@
   position: relative;
   width: 320px;
   margin: 0 auto;
-  padding: 0 30px;
 }
 
 .range__item-link {
   @include font-title(19px, 24px);
   display: block;
-  padding-right: 83px;
+  padding-right: 113px;
   padding-top: 26px;
   padding-bottom: 29px;
+  padding-left: 30px;
   color: $white;
 
   &:active {
     color: $white-30;
+  }
+
+  &--interior {
+    position: relative;
+
+    &::after {
+      @include pseudo;
+      top: 23px;
+      right: 36px;
+      width: 40px;
+      height: 62px;
+      background-image: url("../img/icon-interior.svg");
+      background-repeat: no-repeat;
+      background-size: 40px 62px;
+      opacity: 0.5;
+    }
+  }
+
+  &--toy {
+    position: relative;
+
+    &::after {
+      @include pseudo;
+      top: 21px;
+      right: 27px;
+      width: 60px;
+      height: 60px;
+      background-image: url("../img/icon-toy.svg");
+      background-repeat: no-repeat;
+      background-size: 60px 60px;
+      opacity: 0.5;
+    }
+  }
+}
+
+.range__item-link--interior,
+.range__item-link--toy {
+  &:hover::after,
+  &:focus::after {
+    opacity: 0.7;
+  }
+
+  &:active::after {
+    opacity: 0.3;
   }
 }
 
@@ -124,6 +124,13 @@
 
   .range__item {
     width: 334px;
+  }
+
+  .range__item-link {
+    @include font-title(20px, 30px);
+    padding-top: 27px;
+    padding-left: 36px;
+    color: $white;
 
     &--interior::after {
       top: 30px;
@@ -134,13 +141,6 @@
       top: 32px;
       right: 34px;
     }
-  }
-
-  .range__item-link {
-    @include font-title(20px, 30px);
-    padding-top: 27px;
-    padding-left: 6px;
-    color: $white;
   }
 }
 
@@ -154,7 +154,7 @@
     width: 525px;
 
     &-link {
-      padding-right: 276px;
+      padding-right: 320px;
     }
   }
 }

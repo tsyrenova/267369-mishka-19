@@ -10,7 +10,7 @@ const mainHeaderShipping = document.querySelector(".main-header__shipping");
 const buttonToggle = document.querySelector(".main-header__toggle");
 const modalOpen = document.querySelector(".modal");
 const buttonWeek = document.querySelector(".product-week__link");
-const modalForm = modalOpen.querySelector(".modal__form");
+const modalForm = document.querySelector(".modal__form");
 const buttonBacket = document.querySelectorAll(".products__button");
 
 
